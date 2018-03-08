@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         recommendation.add(new Dataprovider(R.drawable.froyo, "Bruce Springsteen", "I'm on fire"));
         recommendation.add(new Dataprovider(R.drawable.honeycomb, "Lady Gaga", "Poker Face"));
 
-        adapter = new RecyclerAdapter(recommendation);
+        adapter = new RecyclerAdapter(recommendation, this);
         recyclerView.setHasFixedSize(true);
         layoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(layoutManager);
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         favorites.add(new Dataprovider(R.drawable.froyo, "Eric Clapton", "Layla"));
         favorites.add(new Dataprovider(R.drawable.honeycomb, "Miley Cyrus", "The Backyard Sessions"));
 
-        adapterFavorites = new RecyclerAdapter(favorites);
+        adapterFavorites = new RecyclerAdapter(favorites, this);
         recyclerViewFavorites.setHasFixedSize(true);
         layoutManagerFavorites = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         recyclerViewFavorites.setLayoutManager(layoutManagerFavorites);

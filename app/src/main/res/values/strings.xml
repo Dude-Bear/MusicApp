@@ -2,6 +2,7 @@
     <string name="app_name">MusicAppDeveloper</string>
     <string name="recommendations">Our Recommendations</string>
     <string name="favorites">My Favorites</string>
+    <string name="now_playing">Now Playing</string>
 
     <string-array name="Artists">
         <item>"Bruce Springsteen"</item>
